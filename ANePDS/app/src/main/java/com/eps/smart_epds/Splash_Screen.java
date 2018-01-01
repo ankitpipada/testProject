@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
 import android.os.Handler;
+import android.util.Log;
 
 /**
  * Created by lenovo on 12/4/2017.
@@ -14,11 +15,14 @@ import android.os.Handler;
 public class Splash_Screen extends AppCompatActivity
 {
     int SPLASH_DISPLAY_LENGTH = 4000;
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
         sleep();
+        Log.d("My test","Success");
     }
 
     private void sleep()
