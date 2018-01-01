@@ -22,7 +22,7 @@ public class Splash_Screen extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
         sleep();
-        Log.d("My test","Success");
+      
     }
 
     private void sleep()
