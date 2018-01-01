@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/ToolbarColoredBackArrow">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Home Page"
+                android:textColor="@color/white"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="20dp">
+
+            <!--    <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    android:layout_margin="2dp"
+                    card_view:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="wrap_content">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/ration_card_lyt"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/rashannew"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Ration Card Holder"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/text_size_large"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--card_view:cardCornerRadius="4dp"-->
+                    <!--card_view:cardElevation="4dp"-->
+                    <!--android:layout_margin="2dp"-->
+                    <!--card_view:cardUseCompatPadding="true"-->
+                    <!--app:cardBackgroundColor="@color/white"-->
+                    <!--android:layout_height="wrap_content">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/fps_dealer_lyt"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/ic_shopnew"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="FPS Dealer"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/text_size_large"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+                <!--</android.support.v7.widget.CardView>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+
+               <!-- <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    android:layout_margin="2dp"
+                    card_view:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="wrap_content">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/auto_texi_lyt"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/auto_taxi"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Auto \u0026 Taxi"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/text_size_large"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+                <!--</android.support.v7.widget.CardView>-->
+
+                <!--<android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    android:layout_margin="2dp"
+                    card_view:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="wrap_content">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/weighrnmeasure_lyt"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/weight_measure"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Weight \u0026 Measures"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/text_size_large"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                <!--</android.support.v7.widget.CardView>-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="10dp">
+
+                <!--<android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    android:layout_margin="2dp"
+                    card_view:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="wrap_content">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/grievance_lyt"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/complain"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Grievance"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/text_size_large"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+                <!--</android.support.v7.widget.CardView>-->
+
+            <!--    <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    card_view:cardCornerRadius="4dp"
+                    card_view:cardElevation="4dp"
+                    android:layout_margin="2dp"
+                    card_view:cardUseCompatPadding="true"
+                    app:cardBackgroundColor="@color/white"
+                    android:layout_height="wrap_content">-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/application_status_lyt"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:src="@mipmap/ic_status"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Application Status"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textSize="@dimen/text_size_large"
+                            android:textColor="@color/black"/>
+
+                    </LinearLayout>
+
+                <!--</android.support.v7.widget.CardView>-->
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

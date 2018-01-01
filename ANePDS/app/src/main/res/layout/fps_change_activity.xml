@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header_lyt"
+        layout="@layout/header_layout"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_lyt"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/main_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/detail_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/surrender_card"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <include layout="@layout/header_detail"/>
+
+            </LinearLayout>
+
+            <!-- <android.support.v7.widget.CardView
+                 android:layout_width="match_parent"
+                 android:id="@+id/current_fps"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/detail_lyt"
+                 app:cardBackgroundColor="@color/white"
+                 app:cardCornerRadius="3dp"
+                 app:cardElevation="5dp"
+                 app:cardUseCompatPadding="true">-->
+
+            <LinearLayout
+                android:id="@+id/current_fps"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_lyt"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include layout="@layout/current_fps"/>
+
+            </LinearLayout>
+            <!--  </android.support.v7.widget.CardView>-->
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fps_edit_search_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/current_fps"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="3dp"
+                app:cardElevation="5dp"
+                android:layout_margin="3dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:padding="5dp">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1.5"
+                            android:layout_height="wrap_content">
+
+                            <EditText
+                                android:id="@+id/fps_code_et"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/fps_code_txt_header"
+                                android:layout_toLeftOf="@+id/getdata"
+                                android:hint="Enter FPS Code"
+                                android:textSize="@dimen/text_size_large"/>
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <Button
+                            android:id="@+id/getdata"
+                            android:layout_width="0dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="34dp"
+                            android:background="@drawable/button_bg_list"
+                            android:layout_gravity="center"
+                            android:text="Get Data"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_small"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="OR"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"/>
+
+                    <RelativeLayout
+                        android:id="@+id/search_fps_lyt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_bg_list"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/search_fps_code_txt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_centerVertical="true"
+                            android:text="Search FPS Code"
+                            android:padding="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_size_small"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/search_fps"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerInParent="true"
+                            android:layout_toRightOf="@+id/search_fps_code_txt"
+                            android:src="@drawable/search" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/selected_fps_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fps_edit_search_lyt">
+
+                <include layout="@layout/fps_selection_dialog_adapter"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_lyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/selected_fps_detail"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/submit_fps"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_list"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/cancel_fps"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_bg_list"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/text_size_small"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

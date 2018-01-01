@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <!--    <group android:checkableBehavior="single">-->
+        <group android:id="@+id/rc">
+                <item
+                    android:id="@+id/rc_holder"
+                    android:title="Ration Card Holder" />
+        </group>
+        <group android:id="@+id/fps" >
+                <item
+                    android:id="@+id/fps_dealer"
+                    android:title="FPS Dealer" />
+        </group>
+        <group
+            android:id="@+id/autotexi"
+            >
+                <item
+                    android:id="@+id/auto_taxi"
+                    android:title="Auto \u0026 Taxi Owner" />
+        </group>
+        <group
+            android:id="@+id/wnm"
+            >
+                <item
+                    android:id="@+id/wm"
+                    android:title="Weight \u0026 Measures" />
+        </group>
+        <group
+            android:id="@+id/gvce"
+            android:checkableBehavior="single">
+                <item
+                    android:id="@+id/grivance"
+                    android:title="Grievance" />
+        </group>
+        <group
+            android:id="@+id/as"
+            android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/app_status"
+                    android:title="Application Status" />
+        </group>
+        <!--
+
+            </group>
+        -->
+
+        <!-- <item android:title="Communicate">
+             <menu>
+                 <item
+                     android:id="@+id/help"
+                     android:title="Help" />
+             </menu>
+         </item>-->
+
+</menu>

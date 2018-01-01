@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <include
+    android:id="@+id/header_lyt"
+    layout="@layout/header_layout"/>
+
+
+        <LinearLayout
+            android:id="@+id/detail_lyt"
+            android:layout_below="@+id/header_lyt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/surrender_card"
+            android:layout_marginTop="15dp">
+
+        <include
+            layout="@layout/header_detail"/>
+
+        </LinearLayout>
+    <Button
+        android:id="@+id/complete_surrender"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/button_bg_list"
+        android:textColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/detail_lyt"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_small"
+        android:layout_centerInParent="true"
+        android:text="Complete Surrender"/>
+
+    <Button
+        android:id="@+id/partial_surrender"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/button_bg_list"
+        android:textColor="@color/white"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/text_size_small"
+        android:layout_below="@+id/complete_surrender"
+        android:text="Partial Surrender"/>
+
+</RelativeLayout>

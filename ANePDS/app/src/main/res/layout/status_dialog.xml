@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textStyle="normal" />
+
+
+    <Button
+        android:id="@+id/submitbutton"
+        android:layout_width="100dp"
+        android:layout_height="34dp"
+        android:background="@drawable/button_bg_list"
+        android:text="Ok"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp"
+        android:layout_below="@+id/textDialog"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+</LinearLayout>

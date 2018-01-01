@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eps.smart_epds">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".LoginActivity"
+            android:windowSoftInputMode="adjustResize"  />
+
+        <activity android:name=".Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HomePage"/>
+        <activity android:name=".RationCardHolder"/>
+        <activity android:name=".Surrender_of_card"/>
+        <activity android:name=".CompleteSurrenderActivity"/>
+        <activity android:name=".FPS_Change"/>
+        <activity android:name=".PartialSurrenderActivity"/>
+        <activity android:name=".Address_Change"/>
+        <activity android:name=".NewAddressChangeActivity"/>
+        <activity android:name=".TabLayout.Complaint_Grievance"/>
+        <activity android:name=".Application_Status_Individual"/>
+        <activity android:name=".OTPActivity"/>
+        <activity android:name=".Grievance_Track_activity"/>
+
+        <activity android:name=".FPS_Activity"/>
+
+        <activity android:name=".Grievance"/>
+
+        <activity android:name=".AutoTaxi_Owner"
+            android:screenOrientation="sensor"/>
+
+        <activity android:name=".Application_Status"/>
+
+        <activity android:name=".Weight_Measure"
+            android:screenOrientation="sensor"/>
+
+    </application>
+
+</manifest>

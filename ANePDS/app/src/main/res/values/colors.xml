@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2c668f</color>
+    <!--<color name="colorPrimaryDark">#2c668f</color>-->
+    <color name="colorPrimaryDark">#5684a5</color>
+    <color name="colorAccent">#2c668f</color>
+
+
+
+    <color name="white">#ffffff</color>
+    <color name="text">#DBFFFF</color>
+    <color name="toolbar">#09668b</color>
+    <color name="blue">#34aadb</color>
+    <color name="grey">#c0d1d1</color>
+
+    <color name="black">#000000</color>
+    <color name="button_light">#337ab7</color>
+    <color name="button_dark">#2c668f</color>
+    <color name="bg">#E7ECED</color>
+<!--    <color name="button_d">#2c668f</color>-->
+
+</resources>

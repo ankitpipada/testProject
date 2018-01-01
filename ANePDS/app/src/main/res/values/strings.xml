@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ANePDS</string>
+    <string name="welcome">Andaman \u0026 Nicobar\nPublic Distribution System</string>
+    <string name="drawet_header">Andaman \u0026 Nicobar \nPublic Distribution System (ANePDS)</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="toolbar_title">FPS</string>
+    <string name="please_wait">Please Wait</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

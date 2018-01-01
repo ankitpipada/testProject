@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:icon="@drawable/home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/fps_dealer_menu"
+        android:orderInCategory="100"
+        android:title="FPS Dealer"
+
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/auto_texi_owner_menu"
+        android:orderInCategory="100"
+        android:title="Auto \u0026 Taxi Owner"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/wnm_menu"
+        android:orderInCategory="100"
+        android:title="Weight \u0026 Measures"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/grievance_menu"
+        android:orderInCategory="100"
+        android:title="Grievance"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/app_status_menu"
+        android:orderInCategory="100"
+        android:title="Application Status"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>
